@@ -2,9 +2,27 @@
 body {
   color: green;
 }
-p {
-  color: red;
-}
+
 .wrapper {
   color: blue;
+}
+
+#coding {
+  color: blue;
+}
+
+body p.note {
+  color: red;
+}
+
+body .wrapper p.note {
+  color: purple;
+}
+
+.a.b.c.d.e.f.g.h.i.j.k.l {
+  color: green;
+}
+
+.wrapper p {
+  color: skyblue !important;
 }
