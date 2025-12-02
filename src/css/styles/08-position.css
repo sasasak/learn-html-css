@@ -1,0 +1,43 @@
+/* Position 레이아웃 */
+/* position : relative */
+.wrapper {
+  position: relative;
+  border: 1px solid blue;
+}
+.frontend {
+  top: -100px;
+  background-color: #000;
+  position: relative;
+
+  span {
+    position: relative;
+    top: -5px;
+    left: -5px;
+    background-color: #ffc;
+    display: block;
+    padding: 10px;
+  }
+}
+/* position : absolute */
+.school {
+  span {
+    background-color: #cff;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    /* width: 200px;
+    height: 100px; */
+  }
+}
+/* position : fixed */
+.likelion {
+  background-color: #ffc;
+  width: 100px;
+  height: 100px;
+  font-weight: 700;
+  text-align: center;
+  align-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
