@@ -1,0 +1,34 @@
+/* 사용자 정의 속성 */
+@property --primary-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(14, 118, 97);
+}
+/* 전역 변수 */
+:root {
+  --main-color: gray;
+  --default-color: pink;
+}
+body {
+  color: var(--primary-color);
+}
+
+.like {
+  /* background-color 등등 다양한 옵션의 단축표현 background */
+  background: var(--base-color, var(--default-color, red));
+}
+
+.wrapper {
+  --default-color: yellow;
+  --primary-color: red;
+
+  color: var(--primary-color);
+  /* 상하 여백 논리설정 : margin-block */
+  margin-block: 20px;
+  border: 1px solid var(--main-color);
+  background: var(--default-color);
+
+  .euid {
+    color: var(--primary-color);
+  }
+}
