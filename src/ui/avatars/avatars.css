@@ -48,14 +48,10 @@
   box-shadow: 0 0 4px 1px currentColor;
 
   .avatar-item {
-    width: 64px;
-    height: 64px;
-    box-shadow: 0 0 0px 1px currentColor;
     float: left;
     margin: 10px;
 
     &:nth-child(5) {
-      background: yellow;
       /* 5번째 요소의 float를 해제 */
       clear: left;
     }
