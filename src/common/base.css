@@ -20,7 +20,10 @@
   margin-block: 10px;
   padding: 10px;
 }
-
+/*폰트 스타일*/
+body {
+  font-family: 'SUIT Variable', sans-serif;
+}
 /* copy component */
 .copy-component {
   display: flex;
