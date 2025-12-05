@@ -1,13 +1,12 @@
 /* 테이블 스타일링 */
 .members-wrapper {
-  background: var(--yellow);
   block-size: 500px;
   overflow: auto;
 }
 
 .members {
   inline-size: 100%;
-  border: 1px solid var(--black);
+  border-inline: 1px solid var(--black);
   /* border-spacing: 0;
   border-collapse: collapse; 
   empty-cells:hide*/
@@ -43,6 +42,7 @@ tr:nth-child(even) {
 
 th,
 td {
-  padding: 0.5em 1em;
+  padding: 1em;
   text-align: center;
+  white-space: nowrap;
 }
