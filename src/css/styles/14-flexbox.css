@@ -33,9 +33,11 @@ div {
   display: flex;
   /* flex-direction: row-reverse;
   flex-wrap: wrap; */
-  flex-flow: wrap row-reverse;
+  flex-flow: wrap row;
   padding: 0.5em;
   inline-size: 600px;
+  block-size: 200px;
+  justify-content: space-evenly;
 
   > div {
     inline-size: 150px;
@@ -50,4 +52,68 @@ div {
   flex-flow: nowrap row;
   justify-content: space-evenly;
   align-items: stretch;
+}
+
+/* align-content */
+.frontend {
+  display: flex;
+  inline-size: 400px;
+  block-size: 200px;
+}
+/* align-content */
+.frontend {
+  display: flex;
+  inline-size: 400px;
+  block-size: 200px;
+  flex-flow: wrap row;
+  justify-content: start;
+  align-items: stretch;
+  align-content: space-evenly;
+  > div {
+    inline-size: 200px;
+  }
+}
+/* gap 속성 */
+.bootcamp {
+  inline-size: 400px;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: start;
+  align-items: stretch;
+  /* padding: 1em; */
+  column-gap: 40px;
+  block-size: 200px;
+
+  > div {
+    inline-size: 180px;
+  }
+  .bootcamp-item1 {
+    align-self: start;
+  }
+}
+
+/* flex, flex-grow, flex-shrink, flex-basis */
+.school {
+  display: flex;
+  flex-flow: nowrap row;
+  inline-size: 50%;
+  > div {
+    /* flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 0; */
+    flex: 1 1 0;
+  }
+
+  /* .school-item1 {
+    flew-grow: 1;
+  }
+  .school-item2 {
+    flew-grow: 2;
+  }
+  .school-item3 {
+    flew-grow: 3;
+  }
+  .school-item4 {
+    flew-grow: 4;
+  }*/
 }
