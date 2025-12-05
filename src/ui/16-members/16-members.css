@@ -1,0 +1,48 @@
+/* 테이블 스타일링 */
+.members-wrapper {
+  background: var(--yellow);
+  block-size: 500px;
+  overflow: auto;
+}
+
+.members {
+  inline-size: 100%;
+  border: 1px solid var(--black);
+  /* border-spacing: 0;
+  border-collapse: collapse; 
+  empty-cells:hide*/
+
+  .number {
+    inline-size: 15%;
+  }
+  .name {
+    inline-size: 25%;
+  }
+  .email {
+    inline-size: 30%;
+  }
+  .phone {
+    inline-size: 30%;
+  }
+}
+
+thead tr,
+tfoot tr {
+  background: var(--black);
+  color: var(--white);
+}
+
+thead tr {
+  position: sticky;
+  top: 0;
+}
+
+tr:nth-child(even) {
+  background: var(--gray);
+}
+
+th,
+td {
+  padding: 0.5em 1em;
+  text-align: center;
+}

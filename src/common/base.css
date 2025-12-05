@@ -4,6 +4,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 /* 여백 */
 .spacing-20 {
   margin: 20px;
@@ -12,6 +13,13 @@ a {
     margin-block: 20px;
   }
 }
+
+/* 테이블 스타일 */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
 /* 링크(a 요소)스타일  */
 /* 컴포넌트 영역 스타일링 */
 /* ui component */
@@ -20,10 +28,12 @@ a {
   margin-block: 10px;
   padding: 10px;
 }
+
 /*폰트 스타일*/
 body {
   font-family: 'SUIT Variable', sans-serif;
 }
+
 /* copy component */
 .copy-component {
   display: flex;
