@@ -1,19 +1,58 @@
 /* 검색어 입력서식 */
 .searchbar {
-  background: yellow;
+  --green-100: #03cc5c;
+  --green-200: #1bf008;
+  --green-300: #03cca8;
+
+  --gray-100: #bcc3c7;
+  --gray-200: #9b9a90;
+  --gray-300: #6d7478;
+
+  display: flex;
+  flex-flow: nowrap row;
+  column-gap: 12px;
+  padding: 12px 12px 12px 20px;
+  border: 1px solid var(--green-100);
+  border-radius: 24px;
+
+  svg {
+    flex-shrink: 0;
+  }
+
+  .searchbar-form {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 12px;
+    flex-grow: 1;
+  }
+
+  .input-wrapper {
+    /* box-shadow: 0 0 0 1px blue; */
+    /* 부모 확대 */
+    flex-grow: 1;
+
+    input {
+      /* 부모만큼 자식 확대 */
+      width: 100%;
+      height: 24px;
+    }
+  }
 
   .circle-gradient {
     --size: 24px;
-    --start-color: #1bf008;
-    --end-color: #03cca8;
+    --start-color: var(--green-200, #1bf008);
+    --end-color: var(--green-300, #03cca8);
 
-    background: linear-gradient(var(--start-color), var(--end-color));
+    background: linear-gradient(135deg, var(--start-color), var(--end-color));
     border: 0;
     padding: 0;
     width: var(--size);
     aspect-ratio: 1/1;
     border-radius: 50%;
     position: relative;
+    flex-shrink: 0;
 
     &::before {
       --inner-size: calc(var(--size) / 3);
