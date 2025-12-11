@@ -1,0 +1,36 @@
+/* 웹카페 인기 사이트 */
+.favorites {
+  h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    span {
+      color: orangered;
+    }
+  }
+
+  ol {
+    margin-block-start: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    block-size: 36px;
+    overflow: hidden;
+    transition:
+      block-size 0.6s 0s ease-in-out,
+      padding-block 0.6s 0.6s ease-in-out;
+
+    &:hover {
+      interpolate-size: allow-keywords;
+      block-size: auto;
+      padding-block: 20px;
+      /* block-size: calc-size(auto, size); */
+    }
+
+    a {
+      display: block;
+      block-size: 36px;
+      align-content: center;
+      text-indent: 24px;
+    }
+  }
+}
