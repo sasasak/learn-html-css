@@ -55,8 +55,6 @@
 
 /* fade 애니메이션 */
 .fade {
-  background: yellow;
-
   .target-animation {
     /* animation-name: fade;
     animation-duration: 2000ms;
@@ -68,5 +66,95 @@
     animation-fill-mode: forwards; */
     animation: fade 2000ms 300ms alternate infinite ease-in-out forwards;
     animation-play-state: paused;
+  }
+}
+
+/* shrink 애니메이션 */
+.shrink {
+  .target-animation {
+    animation: shrink 2s infinite alternate ease-in-out both;
+    animation-play-state: paused;
+    transform-origin: 0 0;
+  }
+}
+
+/* bounce 애니메이션 */
+.bounce {
+  .target-animation {
+    animation: bounce 0.2s infinite alternate ease-in-out both;
+    animation-play-state: paused;
+    transform-origin: 0 0;
+  }
+}
+
+/* shake 애니메이션 */
+.shake {
+  .target-animation {
+    animation: shake 0.2s infinite alternate ease-in-out both;
+    animation-play-state: paused;
+    transform-origin: 0 0;
+  }
+}
+
+/* filp 애니메이션 */
+.flip {
+  perspective: 500px;
+  .target-animation {
+    animation: flip 2s infinite alternate ease-in-out both;
+    animation-play-state: paused;
+  }
+}
+
+/* pulse 애니메이션 */
+.pulse {
+  .target-animation {
+    animation: pulse 2s infinite alternate ease-in-out both;
+    animation-play-state: paused;
+  }
+}
+
+/* wobble 애니메이션 */
+.wobble {
+  .target-animation {
+    animation: wobble 0.6s infinite alternate ease-in-out both;
+    animation-play-state: paused;
+    /* transform-origin: 0 0; */
+  }
+}
+
+/* spin 애니메이션 */
+.spin {
+  .target-animation {
+    width: 120px;
+    aspect-ratio: 1;
+    background: conic-gradient(red 0% 25%, green 25% 50%, blue 50% 75%, purple 75% 100%);
+    border-radius: 50%;
+    animation: spin 0.5s infinite linear;
+    animation-play-state: paused;
+    color: white;
+  }
+}
+/* border rotate 애니메이션 */
+.rotate {
+  .target-animation {
+    --angle: 0deg;
+
+    width: 120px;
+    height: 120px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background: conic-gradient(from var(--angle), red 0 30%, transparent 30% 100%);
+      width: 110%;
+      height: 110%;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      z-index: -1;
+      border-radius: inherit;
+      animation: angle 2s infinite linear;
+    }
   }
 }
