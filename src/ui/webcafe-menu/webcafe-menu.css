@@ -1,4 +1,5 @@
 /* 웹카페 메뉴 */
+/* 컴포넌트 */
 .menu-item {
   .menu-button {
     border-radius: 4px;
@@ -43,6 +44,25 @@
           outline: 0;
         }
       }
+    }
+  }
+}
+/* 레이아웃 */
+.navigation {
+  padding-bottom: 45px;
+  width: max-content;
+
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    column-gap: 16px;
+
+    .menu-qna,
+    .menu-accessibility,
+    .menu-archive {
+      inset: unset;
+      inset-inline-end: anchor(right);
+      inset-block-start: calc(anchor(bottom) + 4px);
     }
   }
 }
