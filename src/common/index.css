@@ -4,10 +4,12 @@
 @import '/src/common/base.css';
 @import '/src/common/animation.css';
 
-body {
+.chapter-wrapper {
+  width: 100%;
+  height: 100%;
   background: rgb(249, 249, 227);
   border: 5px dotted rgb(247, 236, 36);
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .chapter-title {
   display: flex;
