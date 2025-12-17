@@ -1,45 +1,47 @@
-/* 기본 스타일 */
-/*CSS 예제 본문 스타일*/
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* 여백 */
-.spacing-20 {
-  margin: 20px;
-
-  h1 {
-    margin-block: 20px;
+@layer base {
+  /* 기본 스타일 */
+  /*CSS 예제 본문 스타일*/
+  a {
+    text-decoration: none;
+    color: inherit;
   }
-}
 
-/* 테이블 스타일 */
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-}
+  /* 여백 */
+  .spacing-20 {
+    margin: 20px;
 
-/* 링크(a 요소)스타일  */
-/* 컴포넌트 영역 스타일링 */
-/* ui component */
-.ui-component {
-  border: 1px solid currentColor;
-  margin-block: 10px;
-  padding: 10px;
-}
+    h1 {
+      margin-block: 20px;
+    }
+  }
 
-/*폰트 스타일*/
-body {
-  font-family: 'SUIT Variable', sans-serif;
-}
+  /* 테이블 스타일 */
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
 
-/* copy component */
-.copy-component {
-  display: flex;
-  background: black;
-  color: white;
-  margin-block-start: 0.5em;
-  padding: 0.5em 1em;
-  border-radius: 4px;
+  /* 링크(a 요소)스타일  */
+  /* 컴포넌트 영역 스타일링 */
+  /* ui component */
+  .ui-component {
+    border: 1px solid currentColor;
+    margin-block: 10px;
+    padding: 10px;
+  }
+
+  /*폰트 스타일*/
+  body {
+    font-family: 'SUIT Variable', sans-serif;
+  }
+
+  /* copy component */
+  .copy-component {
+    display: flex;
+    background: black;
+    color: white;
+    margin-block-start: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+  }
 }
